@@ -40,4 +40,13 @@ Como hay un gran límite, el productor queda menos tiempo en espera y utiliza en
 
 ### *PARTE II*
 
+1. Se implementa una estructura monitor que permite a todos los hilos sincronizar la información de los servidores que han encontrado. De esta manera, todos los hilos se detienen
+cuando el monitor indica que se ha llegado al límite.
+
+![Sincronización con monitor](./img/lab/6.PNG)
+
+**IMPORTANTE:** Se maneja con el método main de la clase `edu.eci.black.MainDistribuido`
+
+### *PARTE III*
+
 1. 

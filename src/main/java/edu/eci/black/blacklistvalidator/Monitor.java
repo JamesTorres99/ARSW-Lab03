@@ -33,7 +33,7 @@ public class Monitor {
 	 * Verifica si la cuenta de los servidores ya a alcanzado el límite contenido en la clase HostBlackListsValidator.
 	 * @return true si ya se pasó el límite, false en caso contrario.
 	 */
-	public boolean esValido() {
+	public synchronized boolean esValido() {
 		return cuenta < HostBlackListsValidator.BLACK_LIST_ALARM_COUNT;
 	}
 	
