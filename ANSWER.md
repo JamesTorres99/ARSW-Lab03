@@ -49,4 +49,45 @@ cuando el monitor indica que se ha llegado al límite.
 
 ### *PARTE III*
 
-1. 
+1.  se reviso el juego.
+
+2.  Observamos que para cada jugador se cuenta con una vida invariante dada por DEFAULT_IMMORTAL_HEALTH la cual en este caso es 100 de vida, esto es para cada jugador entonces para N jugadores seria multiplicar DEFAULT_IMMORTAL_HEALTH X N.
+
+3.  No se cumple la invariante ya que al multiplicar DEFAULT_IMMORTAL_HEALTH X N no corresponde con el resultado correcto invariante.
+
+4.  
+Metodos sincronizados.
+
+![Metodos sincronizados](./img/lab/8.PNG)
+
+Sincronizacion
+
+![Sincronizacion](./img/lab/9.PNG)
+
+Implementacion de metodos
+
+![Implementacion de metodos](./img/lab/10.PNG)
+
+5. Aun no se cumple el invariante ya que al multiplicar DEFAULT_IMMORTAL_HEALTH X N no corresponde con el resultado correcto del invariante.
+
+![Re ejecucion](./img/lab/7.PNG)
+
+6. La region critica se encuentra en el metodo fight de la clase inmortal.
+
+![Re ejecucion](./img/lab/11.PNG)
+
+7.8. Se ejecuto el programa sin ningun problema.
+
+9. para los N=100, N=1000 y N=10000 se obtuvo el invariante correcto. 
+
+![pruebas](./img/lab/12.PNG)
+
+10. Uno de los problemas es que al eliminar un inmortal este puede dejar algun proceso incompleto o al eliminarlos uno por uno los hilos tambien lo traten de hacer arrojando una exception.
+
+11. se implemento Stop.
+
+![pruebas](./img/lab/13.PNG)
+
+metodo sincronizado.
+
+![pruebas](./img/lab/14.PNG)
